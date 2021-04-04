@@ -8,21 +8,24 @@ var passwordLength = 8 > 0 < 128
 var generateBtn = document.querySelector("#generate");
 
 for  (var i=0; i<passwordLength; i++){
-  var randomNumber = math.floor(Math.random() * generatePassword);
+  var randomNumber = Math.floor(Math.random() * generatePassword);
   password += chars.substring (randomNumber,randomNumber+1)
 }
 
 
 function generatePassword(){
     
-    var passwordLength = promt("Choose a length between 8-128?");
-
+    var passwordLength = prompt("Choose a length between 8-128?");
+    
     var upper = confirm("confrim upper?")
     var lower = confirm("confirm lower?")
     var num = confirm("do you want to include numbers?")
     var char = confirm("do you want to add special characters")
 
     var allOptions = []
+    console.log("passwordLength is: ", passwordLength)
+    console.log("upper is: ", upper)
+    console.log("lower is: ", lower)
 
 
     
