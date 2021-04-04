@@ -2,11 +2,15 @@
 var beta = "abcdefghijklmnopqrstuvwxyz".split("");
 var alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")
 var number = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-var specialCharacter = "!@#$%^&*". split("")
-
-
+var specialCharacter = "!@#$%^&*".split("")
+var passwordLength = 8 > 0 < 128
 //DO NOT CHANGE THIS CODE
 var generateBtn = document.querySelector("#generate");
+
+for  (var i=0; i<passwordLength; i++){
+  var randomNumber = math.floor(Math.random() * generatePassword);
+  password += chars.substring (randomNumber,randomNumber+1)
+}
 
 
 function generatePassword(){
@@ -19,7 +23,8 @@ function generatePassword(){
     var char = confirm("do you want to add special characters")
 
     var allOptions = []
-    
+
+
     
 
 //create global variables
@@ -55,6 +60,7 @@ function writePassword() {
   passwordText.value = password;
 
 }
+
 
 // Add event listener to generate button
 // DO NOT CHANGE THIS CODE
